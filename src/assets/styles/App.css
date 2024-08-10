@@ -1,0 +1,133 @@
+.app {
+    font-family: Arial, sans-serif;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flow-editor {
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .toolbar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    display: flex;
+    /* background-color: #f0f0f0; */
+  }
+  .toolbar button{
+    background-color: #ffffff;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .toolbar .MuiBox-root{
+    position: absolute;
+    right: 10px;
+  }
+
+  .toolbar .MuiDialogTitle-root{
+    padding: 2px;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    color: #455a64;
+  }
+  .toolbar button:hover {
+    background-color: #4d84fc;
+  }
+ 
+  .toolbar-right .dataset{
+    /* position: absolute; */
+    margin-left: 10px;
+    padding: 8.5px;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  .toolbar-right .dataset:hover{
+    color: #ffffff;
+    background-color: #4d84fc;
+  }
+  .main-content {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .sidebar {
+    width: 100px;
+    border-right: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f8f8f8;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dndnode:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .canvas {
+    flex-grow: 1;
+    position: relative;
+  }
+  .table{
+    border: 1px solid #ccc;
+  }
+
+  .dndnode{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    cursor: move;
+    font-size: 10px;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0,0,0,1);
+  }
+  .react-flow__node.react-flow__node-default.nopan.selectable {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #000; 
+  }
+
+  /* styles/App.css */
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sidebar {
+    flex: 0 0 100px; /* Chiều rộng giảm cho thanh bên trên màn hình nhỏ */
+  }
+
+  .dndnode {
+    width: 40px;
+    height: 40px;
+    font-size: 8px;
+  }
+  
+  .app {
+    flex-direction: column;
+  }
+  
+  .flow-editor {
+    flex-direction: column;
+  }
+}

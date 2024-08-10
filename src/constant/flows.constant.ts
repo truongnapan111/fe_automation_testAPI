@@ -1,0 +1,7 @@
+export enum FLOW_STATUS {
+    RUNNING=1,
+    COMPLETED=2,
+    FAILED=3,
+    TIMEOUT=4,
+    CANCELLED=5
+}
