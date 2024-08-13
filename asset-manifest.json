@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fe_automation_testAPI/static/css/main.0bd62a00.css",
+    "main.js": "/fe_automation_testAPI/static/js/main.363dfcb5.js",
+    "index.html": "/fe_automation_testAPI/index.html",
+    "main.0bd62a00.css.map": "/fe_automation_testAPI/static/css/main.0bd62a00.css.map",
+    "main.363dfcb5.js.map": "/fe_automation_testAPI/static/js/main.363dfcb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bd62a00.css",
+    "static/js/main.363dfcb5.js"
+  ]
+}
